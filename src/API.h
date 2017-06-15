@@ -54,12 +54,13 @@
 #define NORPC
 #define _USE_MATH_DEFINES
 #include <windows.h>
-#endif
 
 #ifdef RVO_EXPORTS
 #define RVO_API __declspec(dllexport)
 #elif defined(RVO_IMPORTS)
 #define RVO_API __declspec(dllimport)
+#endif
+
 #else
 #define RVO_API
 #endif
